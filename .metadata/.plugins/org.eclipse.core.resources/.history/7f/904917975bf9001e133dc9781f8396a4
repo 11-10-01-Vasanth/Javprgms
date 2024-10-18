@@ -1,0 +1,16 @@
+package proj;
+
+import java.util.*;
+
+public class Amstrong {
+	public static void main(String[] args) {
+		System.out.print("Enter number : ");
+		Scanner sc = new Scanner(System.in);
+		int number = sc.nextInt();
+		System.out.println(number);
+		int sum = 0;
+		int power =0;
+		int temp = number;
+		while(number)
+	}
+}

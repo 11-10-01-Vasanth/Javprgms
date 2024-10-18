@@ -1,0 +1,27 @@
+package proj;
+
+public class Fibonacci {
+	public static int fb(int a,int b,int c)
+	{
+		while(c>0)
+		{
+			int k = a + b;
+			c--;
+			fb(b,k,c)
+		}
+		return 0;
+	}
+	public static void main(String[] args) {
+		int a = 0;
+		int b = 1;
+//		System.out.println(a);
+//		System.out.println(b);
+//		for(int i=2;i<=7;i++) {
+//			int c = a+b;
+//			a = b;
+//			b = c;
+//			System.out.println(c);
+//		}
+		fb(a,b,10);
+	}
+}

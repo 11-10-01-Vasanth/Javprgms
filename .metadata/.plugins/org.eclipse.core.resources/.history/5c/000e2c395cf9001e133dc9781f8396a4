@@ -1,0 +1,28 @@
+package proj;
+
+import java.util.*;
+
+public class Amstrong {
+	public static void main(String[] args) {
+		System.out.print("Enter number : ");
+		Scanner sc = new Scanner(System.in);
+		int number = sc.nextInt();
+		System.out.println("Original Number : " + number);
+		int sum = 0;
+		int power = 0;
+		int temp = number;
+		while (temp != 0) {
+			int rem = temp % 10;
+			power += 1;
+			temp /= 10;
+		}
+		System.out.println("Power : " + power);
+		temp = number;
+		while (temp != 0) {
+			int rem = temp % 10;
+			sum = (int) (sum + Math.pow(rem, power));
+			temp /= 10;
+		}
+		System.out.println(temp);
+	}
+}

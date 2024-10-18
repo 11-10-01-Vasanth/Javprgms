@@ -1,0 +1,31 @@
+package proj;
+
+import java.util.*;
+
+public class Amstrong {
+	public static void main(String[] args) {
+		System.out.print("Enter number : ");
+		Scanner sc = new Scanner(System.in);
+		int n = sc.nextInt();
+		int temp = n;
+		int power = 0;
+		int sum = 0;
+		while (temp != 0) {
+			int rem = temp % 10;
+			power++;
+			temp = temp / 10;
+		}
+		System.out.print(power);
+		temp = n;
+		while (temp != 0) {
+			int rem = temp % 10;
+			sum = (int) (sum + Math.pow(rem, power));
+			temp = temp / 10;
+		}
+		if (sum == n) {
+			System.out.println("Amstrong");
+		} else {
+			System.out.println("Non Amstrong");
+		}
+	}
+}
