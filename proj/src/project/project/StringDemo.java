@@ -50,6 +50,8 @@ public class StringDemo {
 		// Fill the list with a single value
 		Collections.fill(l1, 42);
 		System.out.println("After fill: " + l1);
+		
+//		l1.stream().distinct().forEach(s -> System.out.print(s + " "));
 	
 	}
 
